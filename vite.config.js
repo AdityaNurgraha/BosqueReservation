@@ -6,7 +6,11 @@ export default defineConfig({
         laravel({
             input: ['resources/css/app.css', 'resources/js/app.js'],
             refresh: true,
+            // pastikan dev server URL tidak aktif
+            devServer: {
+                https: true,
+            }
         }),
     ],
-    base: '/build/', // paksa relative path → HTTPS aman
+    base: '/build/', // relative path → otomatis HTTPS
 });
