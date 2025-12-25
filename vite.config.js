@@ -8,5 +8,5 @@ export default defineConfig({
             refresh: true,
         }),
     ],
-    base: '/build/', // ini penting supaya CSS/JS dipanggil dari path relatif yang aman
+    base: '/build/', // paksa relative path → HTTPS aman
 });
